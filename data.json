@@ -5,7 +5,7 @@
       "name": "刀削面",
       "category": "noodle",
       "description": "山西面食的代表，以刀削技艺著称。面条中间厚两边薄，形似柳叶，入口外滑内筋，软而不粘。",
-      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西刀削面%20传统手工面食%20大碗面条%20特色美食摄影&image_size=square_hd",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=美味山西刀削面%20大碗面条%20美食摄影%20高清&image_size=square_hd",
       "craft": "削",
       "craftDescription": "使用特制弧形削面刀，将面团托于肩上，一刀接一刀削入锅中，动作如行云流水。",
       "region": "大同、太原"
