@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三晋食单 - 山西美食文化展示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="20" y="10" width="60" height="15" rx="3" fill="#8B0000" opacity="0.8"/>
+                    <rect x="25" y="30" width="50" height="12" rx="3" fill="#8B0000" opacity="0.6"/>
+                    <rect x="30" y="48" width="40" height="10" rx="3" fill="#8B0000" opacity="0.4"/>
+                    <rect x="35" y="65" width="30" height="8" rx="3" fill="#8B0000" opacity="0.3"/>
+                    <line x1="65" y1="8" x2="90" y2="25" stroke="#DAA520" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="70" y1="8" x2="95" y2="25" stroke="#DAA520" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">三晋食单</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="#noodles" class="nav-link">面食宇宙</a></li>
+                    <li class="nav-item"><a href="#snacks" class="nav-link">特色小吃</a></li>
+                    <li class="nav-item"><a href="#map" class="nav-link">美食地图</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 首屏海报 -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-slide active" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西刀削面制作过程%20师傅手工削面%20传统面食技艺%20美食摄影&image_size=landscape_16_9')"></div>
+            <div class="hero-slide" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西面食美食展示%20各种面条%20传统山西美食%20美食摄影&image_size=landscape_16_9')"></div>
+            <div class="hero-slide" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=诱人的山西面条特写%20色香味俱全%20美食摄影&image_size=landscape_16_9')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">三晋食单</h1>
+            <div class="typewriter-container">
+                <p class="typewriter-text" id="typewriter"></p>
+                <span class="cursor">|</span>
+            </div>
+            <a href="#noodles" class="hero-btn">探索美食</a>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+        <div class="slide-indicators">
+            <span class="slide-dot active" data-index="0"></span>
+            <span class="slide-dot" data-index="1"></span>
+            <span class="slide-dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- 面食宇宙 -->
+    <section class="section noodles-section" id="noodles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">面食宇宙</h2>
+                <p class="section-subtitle">一面百样，一面百味，山西面食的艺术殿堂</p>
+            </div>
+            <div class="noodles-grid" id="noodlesGrid">
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色小吃 -->
+    <section class="section snacks-section" id="snacks">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">特色小吃</h2>
+                <p class="section-subtitle">三晋大地的美味传奇，非面食类的舌尖享受</p>
+            </div>
+            <div class="snacks-masonry" id="snacksGrid">
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食地图 -->
+    <section class="section map-section" id="map">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">美食地图</h2>
+                <p class="section-subtitle">跟随地图，探寻三晋大地的美食分布</p>
+            </div>
+            <div class="map-container">
+                <div class="map-visual" id="mapVisual">
+                    <svg class="shanxi-map" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M200 100 Q250 80 300 90 Q350 100 380 120 Q400 140 420 180 
+                                 Q430 220 440 280 Q450 350 445 420 Q440 480 420 520 
+                                 Q400 560 380 600 Q360 640 340 680 Q320 720 280 740 
+                                 Q240 760 200 740 Q160 720 140 680 Q120 640 110 580 
+                                 Q100 520 105 450 Q110 380 120 320 Q130 260 150 200 
+                                 Q170 140 200 100 Z" 
+                              fill="#F5F5DC" stroke="#8B0000" stroke-width="3" fill-opacity="0.3"/>
+                        
+                        <g class="map-markers" id="mapMarkers"></g>
+                    </svg>
+                </div>
+                <div class="map-info" id="mapInfo">
+                    <div class="map-info-placeholder">
+                        <h3>点击地图上的标记</h3>
+                        <p>探索不同地区的特色美食</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文化脚注 -->
+    <footer class="footer" id="culture">
+        <div class="container">
+            <div class="footer-content">
+                <div class="culture-section">
+                    <h3 class="footer-title">山西面食 · 历史渊源</h3>
+                    <div class="culture-grid">
+                        <div class="culture-card">
+                            <h4>一面百样</h4>
+                            <p>山西面食种类繁多，有据可查的面食就有280余种。从刀削面到剔尖，从栲栳栳到饸饹面，每一种面食都蕴含着独特的制作技艺。</p>
+                        </div>
+                        <div class="culture-card">
+                            <h4>晋商文化</h4>
+                            <p>明清时期，晋商将山西面食文化带向全国各地。面食不仅是果腹之食，更成为山西人走南闯北的精神寄托和文化符号。</p>
+                        </div>
+                        <div class="culture-card">
+                            <h4>面食技法</h4>
+                            <p>山西面食的制作技法丰富多彩，削、拨、剔、搓、压、擀、拉、揪等技法各有特色，展现了山西人民的智慧与创造力。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="techniques-section">
+                    <h3 class="footer-title">面食制作技法</h3>
+                    <div class="techniques-grid" id="techniquesGrid">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 三晋食单 | 传承山西美食文化</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 美食详情模态框 -->
+    <div class="modal" id="foodModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
