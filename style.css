@@ -533,14 +533,16 @@ img {
     transition: var(--transition-fast);
 }
 
-.map-marker:hover {
-    transform: scale(1.2);
+.map-marker:hover .map-marker-circle {
+    transform: scale(1.3);
+    transform-origin: center;
 }
 
 .map-marker-circle {
     fill: var(--primary-red);
     stroke: var(--bg-white);
     stroke-width: 2;
+    transition: var(--transition-fast);
 }
 
 .map-marker-text {
@@ -548,7 +550,11 @@ img {
     font-size: 10px;
     fill: var(--text-dark);
     text-anchor: middle;
-    pointer-events: none;
+}
+
+.map-marker:hover .map-marker-text {
+    font-weight: bold;
+    fill: var(--primary-red);
 }
 
 .map-info {
@@ -697,9 +703,9 @@ img {
 
 .techniques-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
