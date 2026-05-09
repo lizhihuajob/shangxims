@@ -1,0 +1,106 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "刀削面",
+      "category": "noodle",
+      "description": "山西面食的代表，以刀削技艺著称。面条中间厚两边薄，形似柳叶，入口外滑内筋，软而不粘。",
+      "image": "https://picsum.photos/id/292/400/400",
+      "craft": "削",
+      "craftDescription": "使用特制弧形削面刀，将面团托于肩上，一刀接一刀削入锅中，动作如行云流水。",
+      "region": "大同、太原"
+    },
+    {
+      "id": 2,
+      "name": "剔尖",
+      "category": "noodle",
+      "description": "又称拨鱼，是山西最具代表性的面食之一。面条形状中间粗、两头细，宛如一条条小鱼在水中游动。",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西剔尖面%20手工拨鱼面%20传统面食%20特色美食摄影&image_size=square_hd",
+      "craft": "剔",
+      "craftDescription": "用筷子沿盘边剔面入锅，技术娴熟者可以剔出粗细均匀、长短一致的面条。",
+      "region": "晋中、太原"
+    },
+    {
+      "id": 3,
+      "name": "栲栳栳",
+      "category": "noodle",
+      "description": "莜面栲栳栳，因形状酷似莜麦面卷成的笆斗（栲栳）而得名。口感筋道，蘸料食用。",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西莜面栲栳栳%20传统莜面卷%20特色面食%20美食摄影&image_size=square_hd",
+      "craft": "搓",
+      "craftDescription": "将莜面小剂子放在光滑的石板上，用手掌一搓一卷，形成空心卷筒，整齐码放蒸熟。",
+      "region": "晋北、忻州"
+    },
+    {
+      "id": 4,
+      "name": "饸饹面",
+      "category": "noodle",
+      "description": "山西传统面食，使用特制的饸饹床压制而成。面条圆细均匀，筋道爽滑，配以羊肉臊子最为经典。",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西饸饹面%20羊肉臊子面%20传统面食%20美食摄影&image_size=square_hd",
+      "craft": "压",
+      "craftDescription": "将面团放入饸饹床（木质或铁质压面器）中，通过杠杆原理加压，使面条从底部孔眼中挤出。",
+      "region": "临汾、运城"
+    },
+    {
+      "id": 5,
+      "name": "平遥牛肉",
+      "category": "snack",
+      "description": "国家地理标志产品，以色、香、味三绝著称。肉质鲜嫩，肥而不腻，瘦而不柴，醇香可口。",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=平遥牛肉%20山西特产%20酱牛肉切片%20传统美食摄影&image_size=square_hd",
+      "craft": "卤",
+      "craftDescription": "采用传统工艺，经过选肉、切割、腌泡、炖煮、焖制等多道工序，使用多种名贵中药材卤制而成。",
+      "region": "平遥"
+    },
+    {
+      "id": 6,
+      "name": "过油肉",
+      "category": "snack",
+      "description": "山西经典名菜，被誉为三晋第一味。肉片滑嫩入味，色泽金黄鲜艳，咸鲜适中，醋香浓郁。",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西过油肉%20传统晋菜%20滑溜肉片%20美食摄影&image_size=square_hd",
+      "craft": "熘",
+      "craftDescription": "精选猪里脊肉切片上浆，过油滑炒后，配以木耳、冬笋，用老醋、料酒等调汁勾芡而成。",
+      "region": "太原、晋中"
+    },
+    {
+      "id": 7,
+      "name": "头脑",
+      "category": "snack",
+      "description": "又名八珍汤，是山西特有的传统滋补食品。由黄芪、羊肉、山药等八种食材熬制，营养丰富，具有滋补功效。",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=山西头脑%20八珍汤%20传统滋补食品%20美食摄影&image_size=square_hd",
+      "craft": "熬",
+      "craftDescription": "将羊肉、黄芪、山药、莲藕、黄酒等多种食材按比例搭配，慢火熬制数小时，汤色乳白，香气浓郁。",
+      "region": "太原"
+    },
+    {
+      "id": 8,
+      "name": "碗托",
+      "category": "snack",
+      "description": "山西传统小吃，尤以柳林碗托最为著名。以荞麦面制成，色泽洁白，口感筋道，配以辣椒油、陈醋等调料食用。",
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=柳林碗托%20山西碗团%20荞麦小吃%20美食摄影&image_size=square_hd",
+      "craft": "蒸",
+      "craftDescription": "将荞麦面调成糊状，盛入小碗中蒸熟，冷却后倒扣取出，切成条状或片状，配以调料凉拌食用。",
+      "region": "吕梁、柳林"
+    }
+  ],
+  "techniques": [
+    {"name": "削", "description": "刀削面技法", "icon": "削"},
+    {"name": "拨", "description": "剔尖技法", "icon": "拨"},
+    {"name": "剔", "description": "拨鱼技法", "icon": "剔"},
+    {"name": "搓", "description": "栲栳栳技法", "icon": "搓"},
+    {"name": "压", "description": "饸饹面技法", "icon": "压"},
+    {"name": "擀", "description": "手擀面技法", "icon": "擀"},
+    {"name": "拉", "description": "拉面技法", "icon": "拉"},
+    {"name": "揪", "description": "揪片技法", "icon": "揪"}
+  ],
+  "regions": [
+    {"name": "太原", "foods": ["刀削面", "剔尖", "过油肉", "头脑"]},
+    {"name": "大同", "foods": ["刀削面"]},
+    {"name": "晋中", "foods": ["剔尖", "过油肉"]},
+    {"name": "晋北", "foods": ["栲栳栳"]},
+    {"name": "忻州", "foods": ["栲栳栳"]},
+    {"name": "临汾", "foods": ["饸饹面"]},
+    {"name": "运城", "foods": ["饸饹面"]},
+    {"name": "平遥", "foods": ["平遥牛肉"]},
+    {"name": "吕梁", "foods": ["碗托"]},
+    {"name": "柳林", "foods": ["碗托"]}
+  ]
+}
